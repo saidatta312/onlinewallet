@@ -1,6 +1,7 @@
 
 package com.capgemini.onlinewallet.presentation;
 
+import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
@@ -24,6 +25,8 @@ public class UserInterface {
 				double balance;
 				Map<Integer, Double> map = service.getDao().getMap();
 				System.out.println(map);
+				List<Integer> list=service.getDao().getList();
+				System.out.println(list);
 				System.out.println("Please Enter Your 10 Digit  Account Id");
 				Integer accountId = scan.nextInt();
 				boolean isValid = false;
