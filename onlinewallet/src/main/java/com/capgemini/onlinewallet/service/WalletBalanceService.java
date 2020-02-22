@@ -30,7 +30,7 @@ public void setDao(WalletBalanceDAO dao) {
 	if(flag==false) {
 		
 		throw new AccountException("Entered Invalid Account Id");
-	
+		
 	}
 	
 			return flag;	
