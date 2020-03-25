@@ -13,7 +13,6 @@ import com.capgemini.onlinewallet.beans.WalletAccount;
 
 class WalletBalanceServiceTest {
 	static WalletAccount wallet;
-	
 	@BeforeAll
 	public static void account() {
 		wallet=new WalletAccount();

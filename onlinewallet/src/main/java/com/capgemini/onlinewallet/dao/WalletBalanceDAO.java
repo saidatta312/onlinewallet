@@ -16,17 +16,16 @@ public class WalletBalanceDAO implements IWalletBalanceDAO {
 
 
 	static WalletAccount transact= new WalletAccount();
-	static Random random= new Random();
+	
 	static {
 		transact.setAccountBalance(4000);
-		//System.out.println(random.nextInt()+1000000000);
-		map.put(random.nextInt(999999999)+1000000000, transact.getAccountBalance());
+		map.put(1000000001, transact.getAccountBalance());
 		transact.setAccountBalance(5000);
-		map.put(random.nextInt(999999999)+1000000000,transact.getAccountBalance());
+		map.put(1000000002,transact.getAccountBalance());
 		transact.setAccountBalance(6000);
-		map.put(random.nextInt(999999999)+1000000000,transact.getAccountBalance());
+		map.put(1000000003,transact.getAccountBalance());
 		transact.setAccountBalance(3000);
-		map.put(random.nextInt(999999999)+1000000000,transact.getAccountBalance());
+		map.put(1000000004,transact.getAccountBalance());
 		
 		}
 
