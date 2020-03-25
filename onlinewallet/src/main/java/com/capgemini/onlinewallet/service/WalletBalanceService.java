@@ -23,10 +23,10 @@ public class WalletBalanceService implements IWalletBalanceService {
 	public boolean isValidAccountId(int accountId) throws AccountException {
 		boolean flag = false;
 		String str = accountId + "";
-		flag = str.matches("[1-9][0-9]{9}");
+		flag = str.matches("[0-9][0-9]{4}");
 		if (flag == false) {
 
-			throw new AccountException("please enter valid 10 digit account Id  ");
+			throw new AccountException("please re-enter valid 5 digit account Id  ");
 }
 
 		return flag;

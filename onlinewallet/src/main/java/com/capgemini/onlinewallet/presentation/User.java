@@ -24,7 +24,7 @@ while(true){
 			do {
 			try {
 				error=false;
-			//if (count>0) {scan.nextInt();}
+			
 			choice = scan.nextInt();
 			
 			
@@ -32,7 +32,6 @@ while(true){
 				error=true;
 				System.out.println("choice should be only numeric ");
 				System.out.println("please re-enter your choice");
-			
 				//flush buffer
 				scan.nextLine();
 			}
@@ -42,7 +41,7 @@ while(true){
 			case 1:
 				double balance;
 				Map<Integer, Double> map = service.getDao().getMap();
-				System.out.println("Please Enter Your 10 Digit  Account Id");
+				System.out.println("Please Enter Your 5 Digit  Account Id");
 				Integer accountId=0;
 				boolean isValid = false;
 				do {
@@ -66,7 +65,7 @@ while(true){
 									
 					error=true;
 					System.out.println("Account Id should be numeric");
-					System.out.println("please re-enter a valid 10 digit  account id ");
+					System.out.println("please re-enter a valid 5 digit  account id ");
 					scan.nextLine();
 				}catch (AccountException e) {
 		               error=true;

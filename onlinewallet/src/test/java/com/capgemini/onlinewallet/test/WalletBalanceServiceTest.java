@@ -17,8 +17,13 @@ class WalletBalanceServiceTest {
 	public static void account() {
 		wallet=new WalletAccount();
 		wallet.setAccountBalance(5000.0);
+		wallet.setAccountId(10001);
 	}
 
+	@Test
+	void testAccountId() {
+		assertEquals(10001, wallet.getAccountId());	
+	}
 	@Test
 	void testAccountBalance() {
  assertEquals(5000.0, wallet.getAccountBalance());
